@@ -13,7 +13,10 @@ input {
 layout {
     gaps 14
     center-focused-column "never"
-    default-column-width { proportion 0.5; }
+    
+    default-column-width {
+        proportion 0.5
+    }
 
     border {
         enable true
@@ -34,7 +37,7 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
     Mod+Q { close-window; }
     Mod+Shift+E { quit; }
-    Mod+Shift+R { spawn "niri", "msg", "action", "reload-config"; }
+    Mod+Shift+R { spawn "niri" "msg" "action" "reload-config"; }
     Mod+T { spawn "alacritty"; }
     Mod+D { spawn "fuzzel"; }
     Mod+Left  { focus-column-left; }
